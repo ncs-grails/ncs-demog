@@ -1,0 +1,6 @@
+.classpath
+target/
+*.log
+*.war
+web-app/WEB-INF/tld/*.tld
+
