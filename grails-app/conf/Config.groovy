@@ -1,7 +1,7 @@
 // locations to search for config files that get merged into the main config
 // config files can either be Java properties files or ConfigSlurper scripts
 
-grails.config.locations = [ "file:/etc/grails/ncs-case-management-config.groovy",
+grails.config.locations = [ "file:/etc/grails/ncs-demog-config.groovy",
 							"file:/etc/grails/logging-config.groovy",
 							"file:/etc/grails/zpfour-config.groovy"]
 
