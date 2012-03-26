@@ -71,26 +71,5 @@ grails.project.dependency.resolution = {
 
 
 
-/*
-		runtime ':address-lookup-zpfour:0.1.2'
-		runtime ':audit-logging:0.5.4'
-		runtime ':barcode4j:0.2'
-		runtime ':csv:0.3'
-		runtime ':joda-time:1.0'
-		runtime ':jquery:1.4.3.2'
-		runtime ':ncs-appointment:0.2'
-		runtime ':ncs-calling:0.1'
-		runtime ':ncs-event:1.1'
-		runtime ':ncs-norc-link:0.4'
-		runtime ':ncs-people:0.8'
-		runtime ':ncs-recruitment:0.4'
-		runtime ':ncs-tracking:3.2.1'
-		runtime ':ncs-web-template:0.2'
-		runtime ':pdf:0.6'
-		runtime ':quartz:0.4.2'
-		runtime ':springcache:1.3.1'
-		compile ":hibernate:${grailsVersion}"
-		build ":tomcat:${grailsVersion}"
-		*/
 	}
 }
