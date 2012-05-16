@@ -5,6 +5,8 @@ grails.config.locations = [ "file:/etc/grails/ncs-demog-config.groovy",
 							"file:/etc/grails/logging-config.groovy",
 							"file:/etc/grails/zpfour-config.groovy"]
 
+grails.views.javascript.library="jquery"
+
 // if(System.properties["${appName}.config.location"]) {
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }

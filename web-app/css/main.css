@@ -14,10 +14,7 @@ html * {
 body {
     background: #fff;
     color: #333;
-    font: 11px verdana, arial, helvetica, sans-serif;
-}
-#grailsLogo {
-	padding:20px;
+    font: 1.1em verdana, arial, helvetica, sans-serif;
 }
 
 a:link, a:visited, a:hover {
@@ -29,8 +26,22 @@ a:link, a:visited, a:hover {
 h1 {
     color: #48802c;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.2em;
     margin: .8em 0 .3em 0;
+}
+
+h2 {
+    color: #48802c;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: .1em 0 .3em 0;
+}
+
+h3 {
+    color: #48802c;
+    font-weight: bold;
+    font-size: 1.0em;
+    margin: .1em 0 .3em 0;
 }
 
 ul {
@@ -73,7 +84,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .menuButton {
-    font-size: 10px;
+    font-size: 0.9em;
     padding: 0 5px;
 }
 .menuButton a {
@@ -92,6 +103,12 @@ input:focus, select:focus, textarea:focus {
 }
 .menuButton a.create {
     background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+.menuButton a.logout {
+    background: url(../images/skin/session_logout.png) center left no-repeat;
     color: #333;
     padding-left: 25px;
 }
@@ -129,9 +146,6 @@ td.errors select {
 td.errors input {
     border: 1px solid red;
 }
-td.errors textarea {
-    border: 1px solid red;
-}
 
 /* TABLES */
 
@@ -152,7 +166,7 @@ td, th {
 th {
     background: #fff url(../images/skin/shadow.jpg);
     color: #666;
-    font-size: 11px;
+    font-size: 1.0em;
     font-weight: bold;
     line-height: 17px;
     padding: 2px 6px;
@@ -160,7 +174,7 @@ th {
 th a:link, th a:visited, th a:hover {
     color: #333;
     display: block;
-    font-size: 10px;
+    font-size: 0.95em;
     text-decoration: none;
     width: 100%;
 }
@@ -201,7 +215,7 @@ th.desc a {
     border: 1px solid #ccc;
     border-top: 0;
     color: #666;
-    font-size: 10px;
+    font-size: 0.95em;
     overflow: hidden;
     padding: 10px 3px;
 }
@@ -223,6 +237,9 @@ th.desc a {
     padding: 5px 0;
 }
 
+div.prop {
+    display: inline-block;
+}
 .prop {
     padding: 5px;
 }
@@ -242,7 +259,7 @@ th.desc a {
     background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
     border: 1px solid #ccc;
     color: #666;
-    font-size: 10px;
+    font-size: 0.95em;
     margin-top: 5px;
     overflow: hidden;
     padding: 0;
@@ -253,7 +270,7 @@ th.desc a {
     border: 0;
     color: #333;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 0.95em;
     font-weight: bold;
     margin-left: 3px;
     overflow: visible;
@@ -270,4 +287,238 @@ th.desc a {
 .buttons input.save {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
+}
+.buttons input.show {
+    background: transparent url(../images/skin/database_show.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+.buttons input.logout {
+    background: transparent url(../images/skin/session_logout.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+/* Aaron's Custom Styles */
+
+
+div.button-panel {
+	display: inline-block;
+	float: left;
+
+	max-width: 3.4em;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: thin;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+
+	margin-bottom: 0.1em;
+	margin-right: 0.1em;
+	
+	background-color: white;
+}
+
+div.button-panel a img {
+	border: none;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.destination {
+	display: inline-block;
+	float: left;
+}
+
+fieldset, input, select {
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+}
+
+#demogLogo {
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 1.3em;
+	background-color: #efe;
+}
+
+#demogLogo a span.subtitle {
+	font-size: 0.6em;
+}
+
+#demogLogo img {
+	padding-bottom: 0.2em;
+	vertical-align: middle;
+}
+
+
+.buttons input.cancel {
+    background: transparent url(../images/skin/database_cancel.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+/* Hide provenance information by default */
+div.sticky-note {
+	font-size: 0.8em;
+	display: block;
+	width: 20em;
+	height: 20em;
+	position: absolute;
+	margin-left: 1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #fea;
+	background-image: url(../images/postit-corner.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	overflow: auto;
+	opacity: 0.9;
+	border-right-color: #BBB;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-bottom-color: #BBB;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+}
+
+div.sticky-note h1 {
+	color: black;
+	font-style: italic;
+	padding-bottom: 0.25em;
+	border-bottom-color: #BBB;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+}
+
+div.sticky-note ul {
+	list-style: none;
+}
+
+div.sticky-note ul li {
+	margin-bottom: 0.5em;
+}
+
+div.sticky-note q {
+	clear: both;
+}
+
+div.sticky-note cite {
+	font-size: 0.9em;
+	text-align: right;
+}
+
+div.provenance {
+	background-image: url(../images/skin/info.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	font-size: 0.8em;
+	display: block;
+	width: 20em;
+	min-height: 48px;
+	position: absolute;
+	margin-left: 1em;
+	padding-left: 48px;
+	background-color: #EEF;
+	opacity: 0.9;
+}
+
+
+div.inactive {
+	background-color: #ffe8dd;
+	background-image: url(../images/squiggle.png);
+}
+
+div.seasonal {
+	background-color: #FFC;
+}
+
+div.do-not-use {
+	background-color: #eee;
+	background-image: url(../images/squiggle.png);
+}
+
+div.seasonal-active {
+	background-color: #DFD;
+}
+
+div.seasonal-range {
+	color: DarkBlue;
+	font-size: 0.9em;
+}
+
+span.in-care-of {
+	font-size: 0.8em;
+	color: black;
+}
+
+/* Blocks.  Styles and Sizes */
+
+div.person-contact {
+	 display: inline-block;
+	 padding: 0.2em;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	top: 0;
+}
+
+div.personAddress {
+	min-height: 7em;
+}
+
+div.person {
+	min-height: 6em;
+	clear: both;
+}
+
+/* remote Links */
+
+.buttons a.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons a.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons a.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons a.show {
+    background: transparent url(../images/skin/database_show.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons a.cancel {
+    background: transparent url(../images/skin/database_cancel.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+.buttons a.logout {
+    background: transparent url(../images/skin/session_logout.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+.roundrect {
+	display: inline-block;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: thin;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin-bottom: 0.2em;
+}
+
+span.preferredOrder {
+	float: right;
+	font-size: 0.6em;
+	color: grey;
 }
