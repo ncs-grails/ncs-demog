@@ -53,3 +53,6 @@ grails.spring.bean.packages = []
 grails.exceptionresolver.params.exclude = ['password']
 
 
+
+// Added by the Address Lookup ZP4 Plugin:
+//grails.plugins.addressLookupZpfour.server = 'http://zp4.intranet.example.com/'

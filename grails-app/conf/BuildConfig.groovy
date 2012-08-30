@@ -52,7 +52,7 @@ grails.project.dependency.resolution = {
 		compile ":csv:0.3"
 		compile ":joda-time:1.0"
 		compile ":jquery:1.7.1"
-		compile ":mail:1.0-SNAPSHOT"
+		compile ":mail:1.0"
 		compile ":ncs-appointment:0.2"
 		compile ":ncs-calling:0.1"
 		compile ":ncs-event:1.1"
